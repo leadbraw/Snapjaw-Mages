@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<populations>
+    <population Name="Leadbraw_SnapjawMage_Mages">
+        <!-- note pickone instead of pickeach -->
+        <group Name="Mages" Style="pickone">
+            <object Number="1" Blueprint="Leadbraw_SnapjawMage_Fire Mage" />
+            <object Number="1" Blueprint="Leadbraw_SnapjawMage_Ice Mage" />
+        </group>
+    </population>
+
+    <population Name="SnapjawParty0" Load="Merge">
+        <group Name="Creatures" Load="Merge">
+            <table Name="Leadbraw_SnapjawMage_Mages" />
+        </group>
+    </population>
+
+    <population Name="SnapjawParty1" Load="Merge">
+        <group Name="Creatures" Load="Merge">
+            <table Name="Leadbraw_SnapjawMage_Mages" />
+        </group>
+    </population>
+
+    <population Name="SnapjawParty1-with-Warlord" Load="Merge">
+        <group Name="Creatures" Load="Merge">
+            <table Name="Leadbraw_SnapjawMage_Mages" />
+        </group>
+    </population>
+
+    <population Name="SnapjawParty0" Load="Merge">
+        <group Name="Creatures" Load="Merge">
+            <table Name="Leadbraw_SnapjawMage_Mages" />
+        </group>
+    </population>
+</populations>
