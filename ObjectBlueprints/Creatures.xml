@@ -4,6 +4,30 @@
         <part Name="Description" Short="A tattered robe and decaying hat are all that protect =pronouns.possessive= thin layer of grizzled fur from the forces of nature. 
         But behind that furtive glance, =pronouns.subjective= =verb:prepare:afterpronoun= an elemental spell, deployed at a moment's notice against threats to
         =pronouns.objective= and =pronouns.possessive= kin. =pronouns.Subjective= =verb:understand:afterpronoun= not the power that =pronouns.subjective= =verb:wield:afterpronoun=; and that only makes =pronouns.objective= all the more dangerous." />
-        <part Name="Render" DisplayName="snapjaw mage" Tile="Leadbraw_SnapjawMage/snapjaw_mage.png"" ColorString="&amp;O" DetailColor="Y" />
+        <part Name="Render" DisplayName="snapjaw mage" Tile="Leadbraw_SnapjawMage/snapjaw_mage.png" ColorString="&amp;O" DetailColor="Y" />
+        <inventoryobject Blueprint="Walking Stick" Number="1" />
+        <inventoryobject Blueprint="Cloth Robe" Number="1" />
+        <inventoryobject Blueprint="Sandals" Number="1" />
+        <!-- 10% chance for 1-2 books -->
+        <inventoryobject Blueprint="StandaloneMarkovBook" Number="1-2" Chance="10" />
+
+        <skill Name="Cudgel" />
+
+        <stat Name="Hitpoints" Value="15" />
+        <stat Name="DV" Value="4" />
+        <stat Name="Ego" sValue="19" />
+        <stat Name="Willpower" sValue="19" />
+
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+
+    <object Name="Leadbraw_SnapjawMage_Fire Mage" Inherits="Leadbraw_SnapjawMage_Snapjaw Mage">
+        <part Name="Render" DisplayName="snapjaw {{R|fire}} mage" Tile="Leadbraw_SnapjawMage/snapjaw_mage.png" ColorString="&amp;O" DetailColor="R" />
+        <mutation Name="Pyrokinesis" Level="1" />
+    </object>
+
+    <object Name="Leadbraw_SnapjawMage_Ice Mage" Inherits="Leadbraw_SnapjawMage_Snapjaw Mage">
+        <part Name="Render" DisplayName="snapjaw {{C|ice}} mage" Tile="Leadbraw_SnapjawMage/snapjaw_mage.png" ColorString="&amp;O" DetailColor="C" />
+        <mutation Name="Cryokinesis" Level="1" />
     </object>
 </objects>
