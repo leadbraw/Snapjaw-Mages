@@ -40,7 +40,7 @@
     <object Name="Leadbraw_SnapjawMage_Electric Mage" Inherits="Leadbraw_SnapjawMage_Snapjaw Mage">
         <part Name="Render" DisplayName="snapjaw {{W|electric}} mage" Tile="Leadbraw_SnapjawMage/snapjaw_mage.png" ColorString="&amp;O" DetailColor="W" />
         <inventoryobject Blueprint="Leadbraw_SnapjawMage_Electric Tome" Number="1" />
-        <mutation Name="Electrical Generation" Level="2" />
+        <mutation Name="ElectricalGeneration" Level="2" />
 
         <tag Name="DynamicObjectsTable:Snapjaws" />
     </object>

@@ -32,9 +32,8 @@
 
     <object Name="Leadbraw_SnapjawMage_Electric Tome" Inherits="Leadbraw_SnapjawMage_Magic Tome">
         <part Name="Render" DisplayName="tome of {{W|electricity}}" Tile="Items/sw_book_1.bmp" ColorString="&amp;W" DetailColor="Y" />
-        <part Name="MissileWeapon" AmmoChar="&amp;W*" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" />
-        <!-- This part also seen on Spaser pistol/rifle, Di-thermo beam, and blast cannon -->
-        <part Name="CooldownAmmoLoader" Cooldown="10" Readout="true" ProjectileObject="ProjectileElectroPistol" />
+        <part Name="MissileWeapon" AmmoChar="&amp;W*" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
+        <part Name="ElectricalDischargeLoader" ChargeUse="300" ProjectileObject="Leadbraw_SnapjawMage_ProjectileElectricTome" />
 
         <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Pistols/sfx_missile_arcWinder_fire" />
     </object>
@@ -53,5 +52,13 @@
         <part Name="Projectile" BasePenetration="4" BaseDamage="1d4" Attributes="Cold" ColorString="&amp;B" PassByVerb="crackle" />
         <part Name="TemperatureOnHit" Amount="-4d20" Max="false" OnWielderHit="true" />
         <part Name="TemperatureOnEntering" Amount="-8d20" Max="false" OnWielderHit="true" />
+    </object>
+
+    <!-- Copied & tweaked from ProjectileElectroPistol -->
+    <object Name="Leadbraw_SnapjawMage_ProjectileElectricTome" Inherits="TemporaryEnergyProjectile">
+        <part Name="Render" DisplayName="{{W|ion packet}}" ColorString="&amp;W" />
+        <part Name="Projectile" BasePenetration="0" BaseDamage="0" Attributes="Electric" ColorString="&amp;W" PassByVerb="fly" />
+        <part Name="DischargeOnHit" DamageRange="4d4" Voltage="200" />
+        <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
     </object>
 </objects>
