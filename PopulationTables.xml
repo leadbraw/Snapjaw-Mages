@@ -5,6 +5,7 @@
         <group Name="Mages" Style="pickone">
             <object Number="1" Blueprint="Leadbraw_SnapjawMage_Fire Mage" />
             <object Number="1" Blueprint="Leadbraw_SnapjawMage_Ice Mage" />
+            <object Number="1" Blueprint="Leadbraw_SnapjawMage_Electric Mage" />
         </group>
     </population>
 

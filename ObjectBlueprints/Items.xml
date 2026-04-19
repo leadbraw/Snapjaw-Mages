@@ -30,6 +30,15 @@
         <tag Name="MissileFireSound" Value="hiss_low" />
     </object>
 
+    <object Name="Leadbraw_SnapjawMage_Electric Tome" Inherits="Leadbraw_SnapjawMage_Magic Tome">
+        <part Name="Render" DisplayName="tome of {{W|electricity}}" Tile="Items/sw_book_1.bmp" ColorString="&amp;W" DetailColor="Y" />
+        <part Name="MissileWeapon" AmmoChar="&amp;W*" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="1" />
+        <!-- This part also seen on Spaser pistol/rifle, Di-thermo beam, and blast cannon -->
+        <part Name="CooldownAmmoLoader" Cooldown="10" Readout="true" ProjectileObject="ProjectileElectroPistol" />
+
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Pistols/sfx_missile_arcWinder_fire" />
+    </object>
+
     <!-- Copied & tweaked from ProjectileFlamethrower -->
     <object Name="Leadbraw_SnapjawMage_ProjectileFireTome" Inherits="TemporaryProjectile">
         <part Name="Render" DisplayName="{{R|stream of flame}}" ColorString="&amp;R" />
